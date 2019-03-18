@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image:url('sfondo.jpg');
+}
+
+
+
+
+.logo {
+	height: 60px;
+	width: 100px;
+}
+
+a.titulo {
+	font-size: 30px;
+	font-weight: 500;
+	color: darkblue;
+	font-family: inherit;
+}
+
+
+div.tarjetas {
+	display: flex;
+	flex-flow:wrap;
+	justify-content: space-around;
+	padding-top: 5%;
+	padding-right: 10%;
+	font-family: inherit;
+	font-size: 13px;
+	margin-bottom: 10%;
+	
+
+}
+.card {
+	margin-bottom: 10%;
+	background-color: blanchedalmond;
+}
+
+
+
+
+.botoninfo {
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#noMatchingResult {
+	text-align: center;
+}
+
+
+.footer {
+	display: flex;
+	justify-content: center;
+	font-family: inherit;
+	color: darkblue;
+}

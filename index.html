@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Ubiqum Weather App</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="container-fluid" id="app">
+		<nav class="navbar navbar-expand-lg navbar d-flex justify-content-between fixed-top">
+			<a class="titulo" href="#"><img src="logo2.png" class="logo"> Ubiqum Weather</a>
+			<form class="form-inline my-2 my-lg-0">
+				<input v-model="searched" class="form-control mr-sm-2 searchInput" type="text" placeholder="Look for your city">
+			</form>
+		</nav>
+
+		<div class="tarjetas">
+			<div v-for="info in ciudad">
+				<div class="card" style="width: 10rem;">
+				<div class="fotocity">
+							<img class="card-img-top"  :src="ciudades(info.name)">
+						</div>
+					<div class="card-body">
+						
+						<h5 class="card-title">{{info.name}}</h5>
+						<p class="card-text">Main Temp {{info.main.temp}}ª</p>
+						<p class="card-text">Max Temp {{info.main.temp_max}}ª</p>
+						<p class="card-text">Min Temp {{info.main.temp_min}}ª</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h1 id="noresult">Oops! An error ocurred while searching your city!</h1>
+
+
+
+
+	</div>
+	<footer class="footer"> Ubiqum Weather masters Ltd 2018</footer>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
+
+<body>
+
+
+</body>
